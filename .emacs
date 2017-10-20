@@ -4,6 +4,9 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
+;; read .bashrc se we don't have to define PATH variables in multiple places
+(setenv "PATH" (shell-command-to-string "source ~/.bashrc; echo -n $PATH"))
+
 ;; UI tweaks
 (customize-set-variable 'custom-enabled-themes '(tango-dark))
 (setq column-number-mode t)

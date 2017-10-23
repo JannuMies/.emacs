@@ -41,11 +41,11 @@
   :ensure t)
 (use-package groovy-mode
   :ensure t)
-(use-package company-go
-  :ensure t)
 (use-package go-mode
   :ensure t)
-(custom-set-variables
+(use-package company-go
+  :ensure t)
+sdf(custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
@@ -63,6 +63,10 @@
 
 ;; Golang shit
 (add-hook 'before-save-hook 'gofmt-before-save)
+(add-hook 'go-mode-hook
+	  (lambda ()
+	    (set (make-local-variable 'company-backends) '(company-go))
+	    (company-mode)))
 
 ;; eshell-tomfoolery
 (defun eshell-here ()

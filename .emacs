@@ -91,3 +91,5 @@ directory to make multiple eshell windows easier."
   (insert "exit")
   (eshell-send-input)
   (delete-window))
+
+(setenv "PAGER" "cat")

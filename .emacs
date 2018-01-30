@@ -93,3 +93,6 @@ directory to make multiple eshell windows easier."
   (delete-window))
 
 (setenv "PAGER" "cat")
+
+;; Tilde does not work everywhere
+(require 'iso-transl)

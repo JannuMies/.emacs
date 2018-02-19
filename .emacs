@@ -45,6 +45,10 @@
   :ensure t)
 (use-package company-go
   :ensure t)
+(use-package vue-mode
+  :ensure t)
+(use-package vue-html-mode
+  :ensure t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

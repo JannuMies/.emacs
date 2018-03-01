@@ -49,7 +49,7 @@
   :ensure t)
 (use-package vue-html-mode
   :ensure t)
-(use-package epa-file
+(use-package epg
   :ensure t)
 (epa-file-enable)
 (custom-set-variables

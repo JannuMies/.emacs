@@ -51,6 +51,9 @@
   :ensure t)
 (use-package epg
   :ensure t)
+(use-package yaml-mode
+  :ensure t)
+
 (epa-file-enable)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

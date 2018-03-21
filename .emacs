@@ -10,6 +10,7 @@
 ;; UI tweaks
 (customize-set-variable 'custom-enabled-themes '(tango-dark))
 (setq column-number-mode t)
+(setq inhibit-splash-screen t)
 
 ;; Don't pollute every folder with backup files
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
@@ -54,6 +55,8 @@
 (use-package yaml-mode
   :ensure t)
 (use-package plantuml-mode
+  :ensure t)
+(use-package org
   :ensure t)
 
 (epa-file-enable)
